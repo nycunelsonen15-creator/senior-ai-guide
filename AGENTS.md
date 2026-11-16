@@ -11,9 +11,8 @@
 ├── index.html                # 網站主框架（包含大字體切換鈕、單元選單、閱讀區）
 ├── style.css                 # 銀髮友善高對比暖色系樣式表
 ├── app.js                    # 動態讀取 lessons/index.json、字級調整與一鍵複製邏輯
-└── lessons/                  # 教學單元存放區
-    ├── index.json            # 教學單元目錄索引檔
-    └── [編號]-[slug].html    # 個別教學單元的 HTML 內容片段
+├── index.json            # 教學單元目錄索引檔
+└── [編號]-[slug].html    # 個別教學單元的 HTML 內容片段
 ```
 
 ## 3. 整體視覺與長輩友善設計規範 (Senior-Friendly Design System)
@@ -36,7 +35,6 @@
 2. **多用具體生活情境**：從長輩每天會遇到的事切入（例如：看健檢報告、收到奇怪簡訊、孫子要回家吃飯）。
 
 ### 步驟 A：檔案命名與放置
-- 所有新單元必須放在 `lessons/` 資料夾內。
 - 檔名格式：`NNN-kebab-case-topic.html`（例如：`003-travel-planning.html`），編號接續 `lessons/index.json` 中最新編號遞增。
 
 ### 步驟 B：教學單元 HTML 片段格式
@@ -86,5 +84,5 @@
 
 ## 5. AI 開發限制與禁止事項 (Constraints & Guardrails)
 1. **保持純靜態架構**：禁止引入 React、Vue 或任何需要打包建置的工具，確保可直接透過 GitHub Pages 運行。
-2. **禁止擅自修改核心檔案**：新增教學單元時，AI **只允許**新增 `lessons/*.html` 並修改 `lessons/index.json`，不得更動 `index.html`、`style.css` 與 `app.js`。
+2. **禁止擅自修改核心檔案**：新增教學單元時，AI **只允許**新增 `*.html` 並修改 `index.json`，不得更動 `index.html`、`style.css` 與 `app.js`。
 3. **必須包含可複製範例**：每個教學單元都必須提供 `.prompt-card` 區塊與 `copyPrompt` 按鈕，讓長輩不用打字也能直接練習。
