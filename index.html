@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>長輩專屬 AI 使用手冊</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div>
+        <h1>銀髮族 AI 生活使用手冊</h1>
+        <p class="subtitle">不用背英文、不用懂電腦，跟著做就能請 AI 幫您忙</p>
+      </div>
+      <div class="font-controls" aria-label="字體大小調整">
+        <span>字體大小：</span>
+        <button class="font-btn active" id="btn-normal" onclick="setFontSize('normal')">標準大字</button>
+        <button class="font-btn" id="btn-large" onclick="setFontSize('large')">特大字體</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2 class="menu-title">請選擇想學的功能：</h2>
+      <nav class="lesson-list" id="lesson-list">
+        <p>正在載入課程目錄...</p>
+      </nav>
+    </aside>
+
+    <main class="content-area">
+      <div id="lesson-viewer">
+        <p>請點選左邊（或上方）的按鈕開始學習。</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
