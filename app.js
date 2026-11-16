@@ -2,7 +2,7 @@ let lessons = [];
 
 async function init() {
   try {
-    const res = await fetch("lessons/index.json");
+    const res = await fetch("index.json");
     lessons = await res.json();
     renderMenu();
     if (lessons.length > 0) {
