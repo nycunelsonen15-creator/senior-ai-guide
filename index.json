@@ -4,13 +4,13 @@
     "title": "不知道煮什麼？請 AI 幫您想三菜一湯",
     "category": "生活妙招",
     "summary": "告訴 AI 冰箱剩什麼食材，立刻給您清淡好消化的食譜。",
-    "file": "lessons/001-health-food.html"
+    "file": "001-health-food.html"
   },
   {
     "id": "002",
     "title": "收到奇怪簡訊？請 AI 幫您看是不是詐騙",
     "category": "防詐安全",
     "summary": "不用怕點錯連結，把可疑訊息貼給 AI 就能幫您把關。",
-    "file": "lessons/002-scam-check.html"
+    "file": "002-scam-check.html"
   }
 ]
